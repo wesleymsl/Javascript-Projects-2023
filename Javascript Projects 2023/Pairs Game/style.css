@@ -1,0 +1,9 @@
+p{
+  width: 200px;
+  height: 200px;
+  margin-right: 40px;
+  background-color: aqua;
+  color: aqua;
+  display: flex;
+  direction: row;
+}
