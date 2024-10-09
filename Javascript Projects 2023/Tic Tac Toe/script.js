@@ -13,17 +13,17 @@ let userNoughts = 'O';
 
 function CompChoice(){
   let validPickArray = [];
-  for(let pick of pickArray){
-    if(pick != compCross || pick != userNoughts){
-      validPickArray.push(pick);
+  for(let i = 0; i < pickArray.length){
+    if(pickArray[i].textContent != compCross && pickArray[i].textContent != userNoughts){
+      validPickArray.push(pickArray[i]);
     }
   }
   let compPick = validPickArray[Math.floor(Math.random() * validPickArray.length - 1)]
   compPick.textContent = compCross;
 }
 
-function UserPick(userPick){
-  userPick.textContent = userNoughts;
+function UserPick(pick){
+  pick.textContent = userNoughts;
   PlayerWinCheck();
   CompChoice();
   CompWinCheck();
