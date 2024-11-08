@@ -19,9 +19,9 @@ document.getElementById("sharingbucketsbutton").addEventListener('click', functi
     menuArray[5].style.display = 'none';
     menuArray[6].style.display = 'none';
     menuArray[7].style.display = 'none';
-
   }
-  menuArray.map(Filter);
+  
+  Filter();
 })
 
 document.getElementById("boxmealsbutton").addEventListener('click', function(){
@@ -37,7 +37,7 @@ document.getElementById("boxmealsbutton").addEventListener('click', function(){
     menuArray[7].style.display = 'none';
 
   }
-  menuArray.map(Filter)
+  Filter()
 })
 
 document.getElementById("burgersbutton").addEventListener('click', function(){
@@ -53,7 +53,7 @@ document.getElementById("burgersbutton").addEventListener('click', function(){
     menuArray[7].style.display = 'none';
 
   }
-  menuArray.map(Filter)
+  Filter();
 })
 
 document.getElementById("bucketsforonebutton").addEventListener('click', function(){
@@ -69,7 +69,7 @@ document.getElementById("bucketsforonebutton").addEventListener('click', functio
     menuArray[7].style.display = 'block';
 
   }
-  menuArray.map(Filter)
+  Filter()
 })
 
 document.getElementById("all").addEventListener('click', function(){
@@ -85,6 +85,6 @@ document.getElementById("all").addEventListener('click', function(){
     menuArray[7].style.display = 'block';
 
   }
-  menuArray.map(Filter)
+  Filter()
 })
 
