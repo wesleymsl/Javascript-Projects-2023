@@ -13,7 +13,7 @@ let userNoughts = 'O';
 
 function CompChoice(){
   let validPickArray = [];
-  for(let i = 0; i < pickArray.length){
+  for(let i = 0; i < pickArray.length -1; i++){
     if(pickArray[i].textContent != compCross && pickArray[i].textContent != userNoughts){
       validPickArray.push(pickArray[i]);
     }
