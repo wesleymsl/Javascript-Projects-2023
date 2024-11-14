@@ -16,7 +16,7 @@ function CompChoice(){
     return pick.textContent != compCross && pick.textContent != userNoughts;
   })
   
-  let compPick = validPickArray[Math.floor(Math.random() * validPickArray.length - 1)]
+  let compPick = validPickArray[Math.floor(Math.random() * validPickArray.length)]
   compPick.textContent = compCross;
 }
 
