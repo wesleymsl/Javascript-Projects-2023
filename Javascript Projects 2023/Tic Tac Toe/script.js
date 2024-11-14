@@ -21,10 +21,14 @@ function CompChoice(){
 }
 
 function UserPick(pick){
-  pick.textContent = userNoughts;
-  PlayerWinCheck();
-  CompChoice();
-  CompWinCheck();
+  if(pick.textContent != userNoughts){
+    pick.textContent = userNoughts;
+    PlayerWinCheck();
+    CompChoice();
+    CompWinCheck();
+  } else {
+    alert("You have already clicked this one");
+  }
 }
 
 pickArray[0].addEventListener('click', function(){
