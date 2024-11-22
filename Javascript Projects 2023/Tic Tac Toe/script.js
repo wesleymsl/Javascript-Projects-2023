@@ -21,13 +21,13 @@ function CompChoice(){
 }
 
 function UserPick(pick){
-  if(pick.textContent != userNoughts){
+  if(pick.textContent != userNoughts && pick.textContent !== compCross){
     pick.textContent = userNoughts;
     PlayerWinCheck();
     CompChoice();
     CompWinCheck();
   } else {
-    alert("You have already clicked this one");
+    alert("This has already been clicked");
   }
 }
 
